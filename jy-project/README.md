@@ -1,4 +1,4 @@
-# jyproject
+# jy-project
 
 ## Project setup
 ```
