@@ -1,12 +1,18 @@
 <template>
-  <div>
+<v-app id="app">
+    <h1>Hello world</h1>
     <div id="nav">
-      <router-link to="/Home">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <router-link to="/Grid">Grid</router-link>
+    <router-view :key="$route.fullPath" />
     </div>
-    <router-view />
-  </div>
+</v-app>
 </template>
+
+<script>
+export default {
+    name: "App"
+};
+</script>
 
 <style>
 #app {
